@@ -1,3 +1,14 @@
 node('master') {
-println "Hemalatha"
+              stage("clone") {
+              }
+              stage("configure") {
+              }
+              stage("build") {
+              }
+              stage("test") {
+              }
+              stage("package") {
+              }
+              stage("Deploy") {
+              }
 }
