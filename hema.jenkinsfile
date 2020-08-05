@@ -1,14 +1,33 @@
+def muni = 10
+
 node('master') {
               stage("clone") {
+                muni = muni + 10
+                println muni
               }
+              
               stage("configure") {
+                 muni = muni - 10
+                 println muni
               }
+              
               stage("build") {
+                  muni = muni * 10
+                  println muni
               }
+              
               stage("test") {
+                  muni = muni % 10
+                  println muni
               }
+              
               stage("package") {
+                 muni = muni + 20
+                 println muni
               }
+              
               stage("Deploy") {
+                muni = muni + 100
+                println muni
               }
 }
